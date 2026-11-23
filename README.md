@@ -45,3 +45,4 @@ The current public Planning Hub should remain in place until the replacement has
 - Current remote preview is a read-only Cloudflare Worker using D1. It is **not yet the Hono/Vite/htmx bundle**.
 - Admin is locked, and existing public sites have not been modified.
 - Full application build and security checks remain required before publishing a functional CMS.
+- Cloudflare staging deployment connected — November 23, 2026.
