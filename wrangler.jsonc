@@ -3,6 +3,11 @@
   "name": "maker-fest-planning-hub-v2-staging",
   "main": "src/index.ts",
   "compatibility_date": "2026-11-23",
+
+  "vars": {
+  "ACCESS_TEAM_DOMAIN": "https://damp-field-eda7.cloudflareaccess.com",
+  "ACCESS_AUD": "0e333ee7dadb14a20a56d99a4221eb95f801897974a6008c018643e23edcc2fe"
+  },
   "assets": { "directory": "./public", "binding": "ASSETS" },
   "d1_databases": [
     {
