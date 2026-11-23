@@ -1,0 +1,28 @@
+{
+  "name": "maker-fest-planning-hub",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply maker-fest-planning-hub-v2-staging --local",
+    "db:migrate:remote": "wrangler d1 migrations apply maker-fest-planning-hub-v2-staging --remote",
+    "typecheck": "tsc --noEmit",
+    "postinstall": "cp node_modules/htmx.org/dist/htmx.min.js public/htmx.min.js"
+  },
+  "dependencies": {
+    "hono": "4.13.21",
+    "htmx.org": "^2.0.0",
+    "jose": "^6.0.0"
+  },
+  "devDependencies": {
+    "vite": "8.3.8",
+    "@cloudflare/vite-plugin": "1.70.1",
+    "wrangler": "4.167.0",
+    "typescript": "^5.9.0",
+    "@cloudflare/workers-types": "^4.20261101.0"
+  }
+}
