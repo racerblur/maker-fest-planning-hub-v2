@@ -60,3 +60,5 @@ For Worker rollback, redeploy the previous staging version. The CMS migration is
 ### GitHub staging workflow
 
 The **CMS checks** workflow also supports a manual staging release. Configure the GitHub `staging` environment with the `CLOUDFLARE_ACCOUNT_ID` variable, a scoped `CLOUDFLARE_API_TOKEN` secret and any required reviewers. Use the workflow after the environment and baseline migration ledger are set up. It reruns validation, records the D1 bookmark in the job log, applies pending migrations and deploys to v2 staging.
+
+Cloudflare Workers Builds validates the CMS pull request branch with `npx wrangler deploy --dry-run` after the build. This packages the Worker for validation without creating a branch preview or connecting one to the staging database.
